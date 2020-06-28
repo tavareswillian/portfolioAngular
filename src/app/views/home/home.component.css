@@ -1,0 +1,15 @@
+.example-icon {
+  padding: 1px 1px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.space-menu{
+    padding: 1px;
+}
+
+.menu{
+    color: slategray;
+    background-color: black;
+}
