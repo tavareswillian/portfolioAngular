@@ -11,7 +11,29 @@
     </mat-toolbar-row>
 </mat-toolbar>
 
-<app-usuario-list></app-usuario-list>
+<mat-toolbar>
+    <mat-toolbar-row>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" class="icon">face</mat-icon><span>&nbsp;</span>
+        <span class="space-menu">Usuário</span>
+        <span class="example-spacer"></span>
+        <button mat-raised-button color="primary" (click)="openDialog()">
+            Cadastrar
+            <mat-icon aria-hidden="false" aria-label="Example home icon">add_circle</mat-icon>
+        </button><span>&nbsp;</span>
+        <button mat-raised-button>
+            Listar
+            <mat-icon aria-hidden="false" aria-label="Example home icon">list</mat-icon>
+        </button><span>&nbsp;</span>
+        <button mat-raised-button>
+            Atualizar
+            <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+        </button><span>&nbsp;</span>
+        <button mat-raised-button color="warn">
+            Remover
+            <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
 
 <app-perfil-list></app-perfil-list>
 
@@ -25,6 +47,28 @@
 
 <app-repositorio-list></app-repositorio-list>
 
-<app-documento-list></app-documento-list>
+<mat-toolbar>
+    <mat-toolbar-row>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">perm_media</mat-icon><span>&nbsp;</span>
+        <span class="space-menu">Documento</span>
+        <span class="example-spacer"></span>
+        <button mat-raised-button color="primary">
+            Cadastrar
+            <mat-icon aria-hidden="false" aria-label="Example home icon">add_circle</mat-icon>
+        </button><span>&nbsp;</span>
+        <button mat-raised-button>
+            Listar
+            <mat-icon aria-hidden="false" aria-label="Example home icon">list</mat-icon>
+        </button><span>&nbsp;</span>
+        <button mat-raised-button>
+            Atualizar
+            <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+        </button><span>&nbsp;</span>
+        <button mat-raised-button color="warn">
+            Remover
+            <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
 
 <app-duvida-list></app-duvida-list>

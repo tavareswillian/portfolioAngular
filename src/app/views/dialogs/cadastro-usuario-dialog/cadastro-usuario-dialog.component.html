@@ -1,0 +1,57 @@
+<h2 mat-dialog-title style="text-align: center;">Cadastro de usuário</h2>
+<mat-dialog-content>
+    <div>
+        <div style="min-height: 150px; min-width: 300px;">
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Nome</label>&nbsp;
+                        </td>
+                        <td>
+                            <input mat-input placeholder="Nome Sobrenome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Login</label>&nbsp;
+                        </td>
+                        <td>
+                            <input mat-input placeholder="usuario123">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>E-mail</label>&nbsp;
+                        </td>
+                        <td>
+                            <input mat-input type="email" placeholder="email@dominio.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Senha</label>&nbsp;
+                        </td>
+                        <td>
+                            <input mat-input type="password" placeholder="Abc123#">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label>Manter sessão?</label>&nbsp;
+                            <input mat-input type="checkbox" checked="checked">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="messageDivCadastro">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-raised-button [mat-dialog-close]="true" cdkFocusInitial color="primary">Cadastrar</button>
+</mat-dialog-actions>
